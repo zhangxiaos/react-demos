@@ -1,0 +1,37 @@
+.news-header {
+	display: flex;
+	padding: 2px;
+	align-items: center;
+	font-size: 10pt;
+	color: #000;
+	background: #ff6600;
+}
+
+.news-header-logo {
+	height: 18px;
+	flex-basis: 18px;
+	border: 1px solid #fff;
+}
+
+.news-header-text-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.news-header-title {
+	margin-left: 4px;
+	font-weight: 400;
+}
+
+.news-header-nav {
+	margin-left: 10px;
+	flex-grow: 1;
+}
+
+.news-header-navlink:not(:first-child)::before {
+	content: ' | ';
+}
+
+.news-header-login {
+	margin-right: 5px;
+}
