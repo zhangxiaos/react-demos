@@ -6,16 +6,16 @@ export default class NewsHeader extends React.Component {
 	getLogo() {
 		return (
 			<div className="news-header-logo">
-				<a href="https://news.ycombinator.com/"><img src={imageLogo} /></a>
-			</div>
+			<a href="https://news.ycombinator.com/"><img src={imageLogo} /></a>
+		</div>
 		);
 	}
 
 	getTitle() {
 		return (
 			<div className="news-header-title">
-				<a className="news-header-text-link" href="https://news.ycombinator.com/">Hacker News</a>
-			</div>
+			<a className="news-header-text-link" href="https://news.ycombinator.com/">Hacker News</a>
+		</div>
 		);
 	}
 
@@ -45,9 +45,9 @@ export default class NewsHeader extends React.Component {
 					{
 						navLinks.map((item, index) => {
 							return (
-									<a className="news-header-navlink news-header-text-link" 
-									   key={index}
-									   href={`https://news.ycombinator.com/${item.url}`}>{item.name}</a>
+								<a className="news-header-navlink news-header-text-link" 
+								   key={index}
+								   href={`https://news.ycombinator.com/${item.url}`}>{item.name}</a>
 								);
 						})
 					}
@@ -58,19 +58,19 @@ export default class NewsHeader extends React.Component {
 	getLogin() {
 		return (
 			<div className="news-header-login">
-					<a className="news-header-text-link" href="https://news.ycombinator.com/login?goto=news">login</a>
-			</div>
+				<a className="news-header-text-link" href="https://news.ycombinator.com/login?goto=news">login</a>
+		</div>
 		);
 	}
 
 	render() {
 		return (
 			<div className="news-header">
-				{this.getLogo()}
-				{this.getTitle()}
-				{this.getNav()}
-				{this.getLogin()}
-			</div>
+			{this.getLogo()}
+			{this.getTitle()}
+			{this.getNav()}
+			{this.getLogin()}
+		</div>
 		);
 	}
 }
